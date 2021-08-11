@@ -548,7 +548,7 @@ namespace Microsoft.AspNetCore.SignalR
 
                                     _cachedPingMessage = Protocol.GetMessageBytes(PingMessage.Instance);
 
-                                    UserIdentifier = userIdProvider.GetUserId(this);
+                                    UserIdentifier = await userIdProvider.GetUserIdAsync(this);
 
                                     // != true needed because it could be null (which we treat as false)
                                     if (Features.Get<IConnectionInherentKeepAliveFeature>()?.HasInherentKeepAlive != true)
