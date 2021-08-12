@@ -20,7 +20,7 @@ namespace Microsoft.AspNetCore.SignalR
         /// <inheritdoc />
         public virtual Task<string?> GetUserIdAsync(HubConnectionContext connection)
         {
-            return GetUserId(connection);
+            return Task.FromResult(GetUserId(connection));
         }
     }
 }

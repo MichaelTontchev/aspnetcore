@@ -21,6 +21,6 @@ namespace Microsoft.AspNetCore.SignalR
         /// </summary>
         /// <param name="connection">The connection to get the user ID for.</param>
         /// <returns>The user ID for the specified connection.</returns>
-        Task<string?> GetUserIdAsync(HubConnectionContext connection) => GetUserId(connection);
+        Task<string?> GetUserIdAsync(HubConnectionContext connection) => Task.FromResult(GetUserId(connection));
     }
 }
