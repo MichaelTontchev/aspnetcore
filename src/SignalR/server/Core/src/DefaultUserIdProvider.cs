@@ -16,11 +16,5 @@ namespace Microsoft.AspNetCore.SignalR
         {
             return connection.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         }
-
-        /// <inheritdoc />
-        public virtual Task<string?> GetUserIdAsync(HubConnectionContext connection)
-        {
-            return Task.FromResult(GetUserId(connection));
-        }
     }
 }

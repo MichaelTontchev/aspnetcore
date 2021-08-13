@@ -156,6 +156,7 @@ Microsoft.AspNetCore.SignalR.IHubProtocolResolver.GetProtocol(string! protocolNa
 Microsoft.AspNetCore.SignalR.ISignalRServerBuilder
 Microsoft.AspNetCore.SignalR.IUserIdProvider
 Microsoft.AspNetCore.SignalR.IUserIdProvider.GetUserId(Microsoft.AspNetCore.SignalR.HubConnectionContext! connection) -> string?
+Microsoft.AspNetCore.SignalR.IUserIdProvider.GetUserIdAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext! connection) -> System.Threading.Tasks.Task<string?>
 Microsoft.AspNetCore.SignalR.SerializedHubMessage
 Microsoft.AspNetCore.SignalR.SerializedHubMessage.GetSerializedMessage(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol! protocol) -> System.ReadOnlyMemory<byte>
 Microsoft.AspNetCore.SignalR.SerializedHubMessage.Message.get -> Microsoft.AspNetCore.SignalR.Protocol.HubMessage?
